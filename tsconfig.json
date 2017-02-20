@@ -1,0 +1,28 @@
+{
+	"compileOnSave": false,
+	"buildOnSave": false,
+	"compilerOptions": {
+		"target": "es5",
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"noImplicitAny": true,
+		"removeComments": false,
+		"noEmitHelpers": false,
+		"sourceMap": true,
+		"inlineSourceMap": false,
+		"suppressImplicitAnyIndexErrors": true
+	},
+	"include": [
+        "src/ts/**/*.ts",
+        "src/ts/**/*.tsx"
+    ],
+    "exclude": [
+        "config",
+        "**/*.spec.ts"
+    ],
+	"atom": {
+		"rewriteTsconfig": false
+	}        
+}

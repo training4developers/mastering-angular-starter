@@ -1,0 +1,108 @@
+{
+  "name": "mastering-angular-starter",
+  "version": "1.2.0",
+  "description": "Demonstration web application using Angular 2",
+  "scripts": {
+    "start": "npm run prod",
+    "test": "karma start ./config/karma.conf.js",
+    "clean": "rimraf dist",
+    "dev": "npm run clean && concurrently \"npm run web-dev\" \"npm run rest\"",
+    "prod": "npm run clean && concurrently \"npm run web-prod\" \"npm run rest\"",
+    "web-dev": "webpack-dev-server --config ./config/webpack.dev.js",
+    "web-prod": "webpack-dev-server --config ./config/webpack.prod.js",
+    "rest": "json-server --watch --port 3010 db.json",
+    "webpack-dev:w": "webpack --config ./config/webpack.dev.js --watch",
+    "webpack-dev": "webpack --config ./config/webpack.dev.js",
+    "webpack-prod": "webpack --config ./config/webpack.prod.js",
+    "webpack-test": "webpack --config ./config/webpack.test.js",
+    "tdd": "npm test -- --auto-watch --no-single-run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/training4developers/mastering-angular-starter.git"
+  },
+  "keywords": [
+    "angular2",
+    "typescript",
+    "angular"
+  ],
+  "author": "Eric W. Greene",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/training4developers/mastering-angular-starter/issues"
+  },
+  "homepage": "https://github.com/training4developers/mastering-angular-starter#readme",
+  "devDependencies": {
+    "babel-eslint": "^7.1.1",
+    "concurrently": "^3.0.0",
+    "eslint": "^3.7.0",
+    "istanbul": "^0.4.5",
+    "istanbul-instrumenter-loader": "0.2.0",
+    "jasmine-core": "^2.4.1",
+    "json-server": "^0.9.4",
+    "karma": "^1.1.0",
+    "karma-coverage": "^1.1.1",
+    "karma-jasmine": "^1.0.2",
+    "karma-junit-reporter": "^1.1.0",
+    "karma-phantomjs-launcher": "^1.0.1",
+    "karma-source-map-support": "^1.1.0",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-webpack": "^2.0.2",
+    "phantomjs-prebuilt": "^2.1.7",
+    "sass-lint": "^1.10.2",
+    "tslint": "^4.4.2",
+    "webpack-dev-server": "^2.0.0"
+  },
+  "dependencies": {
+    "@angular/common": "^2.4.7",
+    "@angular/compiler": "^2.4.7",
+    "@angular/core": "^2.4.7",
+    "@angular/forms": "^2.4.7",
+    "@angular/http": "^2.4.7",
+    "@angular/platform-browser": "^2.4.7",
+    "@angular/platform-browser-dynamic": "^2.4.7",
+    "@angular/router": "^3.4.7",
+    "@types/core-js": "^0.9.35",
+    "@types/jasmine": "^2.5.41",
+    "@types/node": "^7.0.5",
+    "autoprefixer": "^6.3.7",
+    "bootstrap": "4.0.0-alpha.6",
+    "bootstrap-loader": "2.0.0-beta.20",
+    "copy-webpack-plugin": "^4.0.1",
+    "core-js": "^2.4.1",
+    "css-loader": "^0.26.1",
+    "extract-text-webpack-plugin": "^2.0.0-rc.3",
+    "file-loader": "^0.10.0",
+    "html-loader": "^0.4.3",
+    "html-webpack-plugin": "^2.22.0",
+    "node-sass": "^4.5.0",
+    "null-loader": "^0.1.1",
+    "postcss": "^5.0.21",
+    "postcss-import": "^9.1.0",
+    "postcss-loader": "^1.0.0",
+    "raw-loader": "^0.5.1",
+    "reflect-metadata": "^0.1.8",
+    "resolve-url-loader": "^2.0.0",
+    "rimraf": "^2.5.2",
+    "rxjs": "^5.1.0",
+    "sass-loader": "^6.0.1",
+    "style-loader": "^0.13.1",
+    "ts-helpers": "^1.1.1",
+    "ts-loader": "^2.0.0",
+    "typescript": "^2.2.0",
+    "url-loader": "^0.5.7",
+    "webpack": "^2.2.1",
+    "webpack-merge": "^3.0.0",
+    "zone.js": "^0.7.6"
+  },
+  "devServer": {
+    "contentBase": "dist",
+    "historyApiFallback": true,
+    "port": 5000,
+    "proxy": {
+      "/widgets": {
+        "target": "http://localhost:3010"
+      }
+    }
+  }
+}
