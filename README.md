@@ -1,8 +1,8 @@
-# Angular 2 Widgets Sample Application
+# Mastering Angular Application
 
 ## Overview
 
-This is a simple CRUD (create, read, update & delete) application demonstrating the essentials of Angular 2 including HTTP services, routing, forms, composing components and unit testing. The base project configuration was originally adapted from the [Angular 2 Webpack Starter project](https://angular.io/docs/ts/latest/guide/webpack.html), and has been updated to Webpack 2 with help from this project [Angular Class - Angular 2 Webpack Stater](https://github.com/AngularClass/angular2-webpack-starter).
+This is a simple CRUD (create, read, update & delete) application starter project the Angular framework. The base project configuration was originally adapted from the [Angular Webpack Starter project](https://angular.io/docs/ts/latest/guide/webpack.html), and has been updated to Webpack 2 with help from this project [Angular Class - Angular Webpack Stater](https://github.com/AngularClass/angular2-webpack-starter).
 
 ## Application Setup
 
@@ -36,7 +36,7 @@ This set has been completed successfully when you receive the following message:
 
 This terminal window is now running the web server, a second terminal window will need to be opened to run additional terminal commands.
 
-Step 5. Open a web browser, and navigate to [http://localhost:5000](http://localhost:5000).  The Angular 2 web application should load and be usable.
+Step 5. Open a web browser, and navigate to [http://localhost:5000](http://localhost:5000).  The Angular web application should load and be usable.
 
 **To Modify the Web Application**
 
@@ -102,14 +102,14 @@ From a terminal, in the root project folder (where the **package.json** file exi
 - **npm run webpack-test** - runs webpack in test mode so web app file changes are processed once, and deployed to the **dist** folder
 - **npm run tdd** - run application in test driven development mode, karma will re-run tests on each file save
 
-To learn more about the Angular 2/WebPack/TypeScript/Karma configuration, click [here](https://github.com/training4developers/ng2-widgets-app/tree/master/config).
+To learn more about the Angular/WebPack/TypeScript/Karma configuration, click [here](https://github.com/training4developers/ng2-widgets-app/tree/master/config).
 
 ## Useful Resources
 
 - [TypeScript Coding Guidelines](https://github.com/Microsoft/TypeScript/wiki/Coding-guidelines)
-- [Angular 2 Style Guide](https://angular.io/docs/ts/latest/guide/style-guide.html)
-- [Angular 2 Cheat Sheet](https://angular.io/docs/ts/latest/guide/cheatsheet.html)
-- [Angular 2 API](https://angular.io/docs/ts/latest/api/)
-- [Angular 2 Quick Start Project](https://angular.io/docs/ts/latest/quickstart.html)
-- [Angular 2 Webpack Project](https://angular.io/docs/ts/latest/guide/webpack.html)
-- [Angular Class - Angular 2 Webpack Project](https://github.com/AngularClass/angular2-webpack-starter)
+- [Angular Style Guide](https://angular.io/docs/ts/latest/guide/style-guide.html)
+- [Angular Cheat Sheet](https://angular.io/docs/ts/latest/guide/cheatsheet.html)
+- [Angular API](https://angular.io/docs/ts/latest/api/)
+- [Angular Quick Start Project](https://angular.io/docs/ts/latest/quickstart.html)
+- [Angular Webpack Project](https://angular.io/docs/ts/latest/guide/webpack.html)
+- [Angular Class - Angular Webpack Project](https://github.com/AngularClass/angular2-webpack-starter)

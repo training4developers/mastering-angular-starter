@@ -1,4 +1,4 @@
-# Angular 2 Project Configuration
+# Angular Project Configuration
 
 The following configuration files are used to configure the project.
 
@@ -53,7 +53,7 @@ To develop the application, the project is opened in an editor such as Visual St
 
 TypeScript files (ending in .ts) are processed by the TypeScript loader to produce ES5 compliant JavaScript code. HTML files are processed by the HTML loader. SASS files are processed by the SASS loader to produce CSS.  All of the HTML, CSS, and JavaScript are all combined into JavaScript bundle files.
 
-Three bundles are produced: polyfills, vendors and the application. Polyfills plug feature gaps in web browsers to allow Angular 2 to use the latest technologies to render a web page. Vendors includes third-party vendor files such as Angular 2, Reactive Extensions for JS, and Bootstrap. The application bundle is the actual application being developed for this project.
+Three bundles are produced: polyfills, vendors and the application. Polyfills plug feature gaps in web browsers to allow Angular to use the latest technologies to render a web page. Vendors includes third-party vendor files such as Angular, Reactive Extensions for JS, and Bootstrap. The application bundle is the actual application being developed for this project.
 
 ## Testing Configuration
 
@@ -72,11 +72,11 @@ The command **npm test** is executed from the terminal to launch Karma. Karma re
 
 ## Useful Configuration Resources
 
-### Angular 2
+### Angular
 
-- [Angular 2 Quick Start Configuarion](https://angular.io/docs/ts/latest/quickstart.html)
-- [Angular 2 Webpack Configuration](https://angular.io/docs/ts/latest/guide/webpack.html)
-- [Angular 2 TypeScript Configuration](https://angular.io/docs/ts/latest/guide/typescript-configuration.html)
+- [Angular Quick Start Configuarion](https://angular.io/docs/ts/latest/quickstart.html)
+- [Angular Webpack Configuration](https://angular.io/docs/ts/latest/guide/webpack.html)
+- [Angular TypeScript Configuration](https://angular.io/docs/ts/latest/guide/typescript-configuration.html)
 
 ### Atom Html Linter
 
