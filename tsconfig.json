@@ -3,8 +3,9 @@
 	"buildOnSave": false,
 	"compilerOptions": {
 		"target": "es5",
-		"module": "commonjs",
+		"module": "es2015",
 		"moduleResolution": "node",
+        "lib": [ "es2015", "dom" ],
 		"emitDecoratorMetadata": true,
 		"experimentalDecorators": true,
 		"noImplicitAny": true,
@@ -14,13 +15,9 @@
 		"inlineSourceMap": false,
 		"suppressImplicitAnyIndexErrors": true
 	},
-	"include": [
-        "src/ts/**/*.ts",
-        "src/ts/**/*.tsx"
-    ],
-    "exclude": [
-        "config",
-        "**/*.spec.ts"
+    "files": [
+        "src/ts/app/app.module.ts",
+        "src/ts/main.ts"
     ],
 	"atom": {
 		"rewriteTsconfig": false

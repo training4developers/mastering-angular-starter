@@ -148,9 +148,9 @@ module.exports = {
 
         // fixes warnings when transpiling Angular 2 code
         new webpack.ContextReplacementPlugin(
-            /angular(\\|\/)core(\\|\/)(esm(\\|\/)src|src)(\\|\/)linker/,
-            __dirname
-        ),        
+            /angular(\\|\/)core(\\|\/)@angular/,
+            path.resolve(__dirname, '..', 'src')
+        ),     
     ],
 
     // use the webpack dev server to serve up the web application
