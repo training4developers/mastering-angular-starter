@@ -103,6 +103,13 @@
     "proxy": {
       "/widgets": {
         "target": "http://localhost:3010"
+      },
+      "/books": {
+        "target": "http://localhost:3010"
+      },
+      "/geocoder": {
+        "target": "https://geocoding.geo.census.gov",
+        "changeOrigin": true
       }
     }
   }
