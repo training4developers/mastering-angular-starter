@@ -1,17 +1,20 @@
 {
-	"extends": "tslint:latest",
-	"rules": {
-		"arrow-parens": true,
-		"interface-name": [ true, "never-prefix" ],
-		"curly": true,
-		"no-var-requires": false,
-		"no-string-literal": false,
-        "no-console": [ false ],
-        "object-literal-sort-keys": false,
-        "ordered-imports": [ false ]
-	},
-	"jsRules": {
-		"curly": true
-	},
-	"rulesDirectory": []
-}
+    "extends": "tslint:latest",
+    "rules": {
+      "arrow-parens": true,
+      "interface-name": [true, "never-prefix"],
+      "curly": true,
+      "no-var-requires": false,
+      "no-string-literal": false,
+      "no-console": [false],
+      "max-classes-per-file": [true, 50],
+      "quotemark": [true, "double", "jsx-double"],
+      "object-literal-sort-keys": false,
+      "ordered-imports": [ false ],
+      "no-submodule-imports": false
+    },
+    "jsRules": {
+      "curly": true
+    },
+    "rulesDirectory": []
+  }

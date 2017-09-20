@@ -12,4 +12,3 @@ import "rxjs";
 
 // other vendors such as moment.js or lodash
 // You can import js, ts, css, sass, ...
-import "bootstrap-loader";

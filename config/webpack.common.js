@@ -74,17 +74,8 @@ module.exports = {
                 use: [
                     'style-loader',
                     'css-loader',
-                    {
-                        loader: 'postcss-loader',
-                        // configuration for the postcss loader which modifies CSS after
-                        // processing
-                        options: {
-                            // autoprefixer plugin for postcss adds vendor specific prefixing for
-                            // non-standard or experimental css properties
-                            plugins: [ require('autoprefixer') ]
-                        }
-                    },
-                    'sass-loader'
+                    'postcss-loader',
+                    'sass-loader',
                 ]
             },
             // transpiles component SASS stylesheets
@@ -94,17 +85,8 @@ module.exports = {
                 // loader order is executed right to left
                 use: [
                     'raw-loader',
-                    {
-                        loader: 'postcss-loader',
-                        // configuration for the postcss loader which modifies CSS after
-                        // processing
-                        options: {
-                            // autoprefixer plugin for postcss adds vendor specific prefixing for
-                            // non-standard or experimental css properties
-                            plugins: [ require('autoprefixer') ]
-                        }
-                    },
-                    'sass-loader'
+                    'postcss-loader',
+                    'sass-loader',
                 ]
             }
         ]

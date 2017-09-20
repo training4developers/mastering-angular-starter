@@ -7,6 +7,8 @@ const devServerConfig = require('../package.json').devServer;
 
 // load webpack for plugins below
 const webpack = require('webpack');
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
+
 
 // configure the environment object for production mode
 const ENV = process.env.NODE_ENV = process.env.ENV = 'production';
@@ -35,13 +37,15 @@ module.exports = require('webpack-merge')(require('./webpack.common.js'), {
             minimize: true
         }),        
         // minimizes javascript code
-        new webpack.optimize.UglifyJsPlugin({
+        new UglifyJsPlugin({
             sourceMap: true,
-            compress: {
-                warnings: false,
-            },
-            mangle: {
-                keep_fnames: true,
+            uglifyOptions: {
+                ecma: 8,
+                mangle: { keep_classnames: true },
+                output: { beautify: true },
+                compress: {
+                    warnings: false,
+                },
             },
         }),
         // define environment variables
