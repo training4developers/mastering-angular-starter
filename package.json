@@ -3,7 +3,7 @@
   "version": "1.2.0",
   "description": "Demonstration web application using Angular 2",
   "scripts": {
-    "start": "npm run prod",
+    "start": "npm run dev",
     "test": "karma start ./config/karma.conf.js",
     "clean": "rimraf dist",
     "dev": "npm run clean && concurrently \"npm run web-dev\" \"npm run rest\"",
