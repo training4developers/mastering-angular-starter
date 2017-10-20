@@ -8,7 +8,7 @@ This is a simple CRUD (create, read, update & delete) application starter projec
 
 Step 1. Install Node.js version 7 or higher. To install Node.js click [here](https://nodejs.org).
 
-Step 2. Download this repository from [here](https://github.com/training4developers/ng2-widgets-app/archive/master.zip). Extract the zip file to a working folder on your system.
+Step 2. Download this repository from [here](https://github.com/training4developers/mastering-angular-starter/archive/master.zip). Extract the zip file to a working folder on your system.
 
 Step 3. Open a terminal window, change to the folder where you extracted the zip file. You should see a **package.json** file in the folder.
 
